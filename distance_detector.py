@@ -15,3 +15,7 @@ ap.add_argument("-o", "--output", type=str, default="",
 ap.add_argument("-d", "--display", type=int, default=1,
 	help="whether or not output frame should be displayed")
 args = vars(ap.parse_args())
+
+# load the COCO class labels our YOLO model was trained on
+labelsPath = os.path.sep.join([config.MODEL_PATH, "coco.names"])
+LABELS = open(labelsPath).read().strip().split("\n")
