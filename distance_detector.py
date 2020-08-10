@@ -13,7 +13,7 @@ ap.add_argument("-i", "--input", type=str, default="",
 ap.add_argument("-o", "--output", type=str, default="",
 	help="path to (optional) output video file")
 ap.add_argument("-d", "--display", type=int, default=1,
-	help="whether or not output frame should be displayed")
+	help="Output frame should be displayed")
 args = vars(ap.parse_args())
 
 # load the COCO class labels our YOLO model was trained on
