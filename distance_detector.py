@@ -19,3 +19,8 @@ args = vars(ap.parse_args())
 # load the COCO class labels our YOLO model was trained on
 labelsPath = os.path.sep.join([config.MODEL_PATH, "coco.names"])
 LABELS = open(labelsPath).read().strip().split("\n")
+
+
+# paths to the YOLO weights and model configuration
+weightsPath = os.path.sep.join([config.MODEL_PATH, "yolov3.weights"])
+configPath = os.path.sep.join([config.MODEL_PATH, "yolov3.cfg"])
