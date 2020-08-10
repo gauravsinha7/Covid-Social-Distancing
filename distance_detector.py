@@ -24,3 +24,7 @@ LABELS = open(labelsPath).read().strip().split("\n")
 # paths to the YOLO weights and model configuration
 weightsPath = os.path.sep.join([config.MODEL_PATH, "yolov3.weights"])
 configPath = os.path.sep.join([config.MODEL_PATH, "yolov3.cfg"])
+
+# load YOLO object detector trained on COCO
+print("[INFO] loading YOLO from disk...")
+net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
