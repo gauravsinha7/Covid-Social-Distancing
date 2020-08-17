@@ -62,3 +62,10 @@ while True:
 	frame = imutils.resize(frame, width=700)
 	results = detect_people(frame, net, ln,
 		personIdx=LABELS.index("person"))
+
+
+	# initialize the set of indexes that violate the minimum social
+	# distance
+	violate = set()
+
+	
