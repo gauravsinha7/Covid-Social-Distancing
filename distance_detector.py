@@ -46,3 +46,14 @@ ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 print("[INFO] accessing video stream...")
 vs = cv2.VideoCapture(args["input"] if args["input"] else 0)
 writer = None
+
+
+# loop over the frames from the video stream
+while True:
+	# read the next frame from the file
+	(grabbed, frame) = vs.read()
+
+	# if the frame was not grabbed, then we have reached the end
+	# of the stream
+	if not grabbed:
+		break
