@@ -57,3 +57,8 @@ while True:
 	# of the stream
 	if not grabbed:
 		break
+
+	# resize the frame and then detect people (and only people) in it
+	frame = imutils.resize(frame, width=700)
+	results = detect_people(frame, net, ln,
+		personIdx=LABELS.index("person"))
