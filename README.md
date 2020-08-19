@@ -4,7 +4,7 @@ Detecting social distancing in OpenCV using YOLO Object Detector v4.
 This repository contains code for giving a video input to the file social_distance_detector.py which generates an output file.
 
 ### The file structure for the repository is as follows:
-'''
+```
 
     .
     ├── image_processing                   # This folder contains the files for config and person detection
@@ -14,4 +14,4 @@ This repository contains code for giving a video input to the file social_distan
     ├── distance_detector.py               # Main file that compiles and runs for object detection
     ├── LICENSE                            # Default license added
     └── README.md                          # Description of the repository   
-'''
+```
