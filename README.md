@@ -17,5 +17,5 @@ This repository contains code for giving a video input to the file social_distan
     
 ```
 
-## To run the code use distance_detector.py with argument of video file
+### Usage
 To run the code use distance_detector.py  <video_file>
