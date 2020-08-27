@@ -13,5 +13,8 @@ This repository contains code for giving a video input to the file social_distan
     ├── coco.names                         # Names of object from Microsoft COCO dataset (https://cocodataset.org/#home)
     ├── distance_detector.py               # Main file that compiles and runs for object detection
     ├── LICENSE                            # Default license added
-    └── README.md                          # Description of the repository   
+    └── README.md                          # Description of the repository
+    
 ```
+
+## To run the code use distance_detector.py with argument of video file
